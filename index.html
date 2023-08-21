@@ -8,20 +8,33 @@
 
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="max-w-5xl mx-auto bg-primary-50 px-2 py-4 font-body">
-    <h1 class="text-3xl font-display">Hello! I'm Sam</h1>
-    <div class="m-4 p-4 bg-primary-800 text-primary-50 rounded-3xl">
-      <p class="text-xl mb-4">
-        I'm developing web apps with Typescript and Next.js
-      </p>
-      <p class="mb-8">As a frontend dev, am i though?</p>
-      <button class="border-secondary-400 border-4 rounded-xl">
-        Get in contact!
-      </button>
-    </div>
+  <body
+    class="max-w-5xl mx-auto bg-primary-800 text-primary-50 px-2 py-4 font-body"
+  >
+    <head>
+      <h1 class="text-3xl font-display">
+        Hello! I'm Sam <span class="block w-24 h-0.5 bg-secondary-400"></span>
+      </h1>
+      <div class="m-4 py-4 px-6 bg-primary-700">
+        <p class="text-xl mb-4">
+          I'm developing web apps with Typescript and Next.js
+        </p>
+        <p class="mb-8">As a frontend dev, am i though?</p>
+
+        <!-- CALL TO ACTION BUTTON -->
+        <div class="relative w-48 h-12 z-10">
+          <button
+            class="absolute top-0 left-0 w-48 h-12 bg-secondary-400 text-primary-900 font-bold text-xl px-4 py-1 z-20 hover:bg-secondary-200 hover:top-0.5 hover:left-0.5 active:bg-secondary-100 active:top-1 active:left-1"
+          >
+            <span>Get in contact!</span>
+          </button>
+          <div class="bg-primary-900 w-48 h-12 absolute top-1 left-1 z-0"></div>
+        </div>
+      </div>
+    </head>
     <h2>Featured Projects</h2>
     <section>
-      <p>image</p>
+      <h2 class="font-display text-4xl">Pokèbook</h2>
       <p>description</p>
       <p>live link</p>
       <p>github link</p>

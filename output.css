@@ -732,6 +732,18 @@ video {
   margin-top: 0.5rem;
 }
 
+.-mb-8 {
+  margin-bottom: -2rem;
+}
+
+.-mb-12 {
+  margin-bottom: -3rem;
+}
+
+.-mb-24 {
+  margin-bottom: -6rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -863,6 +875,10 @@ video {
 
 .h-12 {
   height: 3rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-6 {
@@ -2134,6 +2150,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {

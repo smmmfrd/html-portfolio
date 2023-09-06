@@ -12,7 +12,7 @@
   >
     <!-- NAVBAR -->
     <nav
-      class="z-30 sticky top-0 border-b border-primary-800 bg-primary-900 -mt-4 -mx-2 flex justify-between py-2 px-2 items-center border-l border-r"
+      class="z-30 sticky top-0 border-primary-800 bg-primary-900 -mt-4 -mx-2 flex justify-between py-2 px-2 items-center"
     >
       <!-- TODO: this text will change as the user scrolls through the sections -->
       <h1 class="font-display text-4xl">Welcome</h1>
@@ -56,9 +56,9 @@
       </h2>
 
       <!-- POKÈBOOK -->
-      <article class="-mx-2 px-4 h-96">
+      <article class="-mx-2 px-4 pb-16 flex flex-col">
         <h3 class="font-display text-4xl">Pokèbook</h3>
-        <p>
+        <p class="mt-0.5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, fugiat
           omnis eius repellendus numquam corporis. Pariatur a, sunt quibusdam
           cum veritatis minus rerum voluptatum deleniti ipsam corrupti ducimus
@@ -68,21 +68,21 @@
         <!-- LINKS -->
         <ul class="flex justify-between px-20 pt-8">
           <li class="flex items-center gap-2">
-            <div class="block rounded-full w-8 h-8 bg-primary-50"></div>
+            <div class="block rounded-full w-4 h-4 bg-primary-50"></div>
             Live &rarr;
           </li>
 
           <li class="flex items-center gap-2">
-            <div class="block rounded-full w-8 h-8 bg-primary-50"></div>
+            <div class="block rounded-full w-4 h-4 bg-primary-50"></div>
             Github &rarr;
           </li>
         </ul>
       </article>
 
       <!-- LIVE THEATER -->
-      <article class="-mx-2 px-4 h-96">
+      <article class="-mx-2 px-4 pb-16 flex flex-col">
         <h3 class="font-display text-4xl">Live Theater</h3>
-        <p>
+        <p class="mt-0.5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorum
           saepe itaque eveniet suscipit pariatur cupiditate non autem ab ipsam
           veritatis, architecto a perferendis explicabo deserunt consequatur
@@ -92,12 +92,12 @@
         <!-- LINKS -->
         <ul class="flex justify-between px-20 pt-8">
           <li class="flex items-center gap-2">
-            <div class="block rounded-full w-8 h-8 bg-primary-50"></div>
+            <div class="block rounded-full w-4 h-4 bg-primary-50"></div>
             Live &rarr;
           </li>
 
           <li class="flex items-center gap-2">
-            <div class="block rounded-full w-8 h-8 bg-primary-50"></div>
+            <div class="block rounded-full w-4 h-4 bg-primary-50"></div>
             Github &rarr;
           </li>
         </ul>
@@ -105,37 +105,43 @@
 
       <!-- FEATURETTES -->
       <section
-        class="grid grid-cols-[repeat(auto-fill,minmax(192px,1fr))] gap-4"
+        class="grid grid-cols-[repeat(auto-fill,minmax(208px,1fr))] gap-4 gap-y-8 px-2 w-"
       >
         <!-- PoE EQUIP MANAGER -->
-        <article class="h-72 flex flex-col justify-between">
+        <article class="h-56 flex flex-col justify-between px-2">
           <header>
             <h3 class="font-display text-4xl">PoE Equip Manager</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </header>
-          <footer class="flex justify-between">
+          <p class="mt-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <footer class="flex justify-between px-2 pt-4">
             <p>Live &rarr;</p>
             <p>Github &rarr;</p>
           </footer>
         </article>
         <!-- ROOKIE DRIVE -->
-        <article class="h-72 flex flex-col justify-between">
+        <article class="h-56 flex flex-col justify-between px-2">
           <header>
             <h3 class="font-display text-4xl">Rookie Drive</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </header>
-          <footer class="flex justify-between">
+          <p class="mt-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <footer class="flex justify-between px-2 pt-4">
             <p>Live &rarr;</p>
             <p>Github &rarr;</p>
           </footer>
         </article>
         <!-- BATTLESHIP -->
-        <article class="h-72 flex flex-col justify-between">
+        <article class="h-56 flex flex-col justify-between px-2">
           <header>
             <h3 class="font-display text-4xl">Battleship</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </header>
-          <footer class="flex justify-between">
+          <p class="mt-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <footer class="flex justify-between px-2 pt-4">
             <p>Live &rarr;</p>
             <p>Github &rarr;</p>
           </footer>
@@ -149,6 +155,7 @@
         <span class="ml-2">Get in Contact!</span>
         <span class="mt-1.5 block w-24 h-0.5 bg-secondary-400"></span>
       </h2>
+
       <ul class="flex items-center justify-between flex-wrap gap-8">
         <li class="text-center mx-auto">
           <div class="w-24 h-24 bg-primary-50"></div>

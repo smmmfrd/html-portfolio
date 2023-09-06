@@ -16,7 +16,7 @@
     >
       <!-- TODO: this text will change as the user scrolls through the sections -->
       <h1 class="font-display text-4xl">Welcome</h1>
-      <ul class="flex gap-4 text-lg">
+      <ul class="flex gap-4">
         <li>About</li>
         <li>Project</li>
         <li>Contact</li>
@@ -26,7 +26,7 @@
     <!-- HERO -->
     <header class="min-h-screen -mb-20 flex flex-col justify-center">
       <h2 class="block text-5xl font-display">
-        <span class="ml-2">Hello! I'm Sam</span>
+        <span class="pl-2 block">Hello! I'm Sam</span>
         <span class="mt-1.5 block w-24 h-0.5 bg-secondary-400"></span>
       </h2>
       <div class="m-4 py-4 px-6 bg-primary-700">
@@ -42,7 +42,7 @@
           >
             <span>Get in contact!</span>
           </button>
-          <div class="bg-primary-900 w-48 h-12 absolute top-1 left-1 z-0"></div>
+          <div class="bg-primary-900 w-56 h-12 absolute top-1 left-1 z-0"></div>
         </div>
       </div>
     </header>
@@ -50,8 +50,8 @@
     <!-- PROJECTS -->
     <section>
       <!-- PROJECT HERO -->
-      <h2 class="text-5xl mb-8 font-display">
-        <span class="ml-2"> Featured Projects</span>
+      <h2 class="text-5xl leading-tight mb-8 font-display">
+        <span class="pl-2 block">Featured Projects</span>
         <span class="mt-1.5 block w-24 h-0.5 bg-secondary-400"></span>
       </h2>
 
@@ -104,7 +104,9 @@
       </article>
 
       <!-- FEATURETTES -->
-      <section class="flex items-start gap-8 overflow-auto">
+      <section
+        class="grid grid-cols-[repeat(auto-fill,minmax(192px,1fr))] gap-4"
+      >
         <!-- PoE EQUIP MANAGER -->
         <article class="h-72 flex flex-col justify-between">
           <header>

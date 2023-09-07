@@ -7,6 +7,8 @@ const projectElement = document.getElementById("projects");
 
 const navItems = document.querySelectorAll(".nav-item");
 
+const navChoices = ["About", "Projects", "Contact"];
+
 function handleScroll() {
   const heroPosition = heroElement.getBoundingClientRect();
   const projectPosition = projectElement.getBoundingClientRect();
@@ -27,8 +29,9 @@ function handleScroll() {
 }
 
 function hideNavItem(hideIndex) {
+  const goodItems = navChoices.filter((_, i) => i !== hideIndex);
   navItems.forEach((element, index) => {
-    element.style.width = `${index === hideIndex ? "0%" : "auto"}`;
+    element.textContent = goodItems[index];
   });
 }
 hideNavItem(0);

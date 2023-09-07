@@ -2,12 +2,12 @@ window.addEventListener("scroll", handleScroll);
 
 const navTitle = document.getElementById("nav-title");
 
-const heroElement = document.getElementById("hero");
+const heroElement = document.getElementById("about");
 const projectElement = document.getElementById("projects");
 
-const navItems = document.querySelectorAll(".nav-item");
+const navItems = document.querySelectorAll(".nav-link");
 
-const navChoices = ["About", "Projects", "Contact"];
+const navChoices = ["about", "projects", "contact"];
 
 function handleScroll() {
   const heroPosition = heroElement.getBoundingClientRect();
@@ -31,10 +31,12 @@ function handleScroll() {
 function hideNavItem(hideIndex) {
   const goodItems = navChoices.filter((_, i) => i !== hideIndex);
   navItems.forEach((element, index) => {
-    element.textContent = goodItems[index];
+    element.textContent = `${goodItems[index].slice(0, 1)}${goodItems[
+      index
+    ].slice(1)}`;
+    element.href = `#${goodItems[index]}`;
   });
 }
-hideNavItem(0);
 
 var started = false;
 var writerIndex = 0;

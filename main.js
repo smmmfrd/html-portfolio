@@ -1,5 +1,14 @@
 window.addEventListener("scroll", handleScroll);
 
+(function confirmScroll() {
+  // A little trick to confirm the nav text in case a user over scrolls.
+  // (when a user does a big scroll & lets go on a phone or a macbook, that doesn't trigger the scroll event)
+  setTimeout(() => {
+    handleScroll();
+    confirmScroll();
+  }, 1000);
+})();
+
 const navTitle = document.getElementById("nav-title");
 
 const heroElement = document.getElementById("about");

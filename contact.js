@@ -5,30 +5,30 @@ const contactConnector = document.querySelector("#contact-connector");
 document.querySelector("#contact-link").addEventListener("mouseleave", () => {
   detailsOpen = "";
 
-  toggleDetails();
+  contactElements.forEach((el) => {
+    el.style.height = `56px`;
+  });
 
-  contactConnector.style.height = "0";
+  toggleDetails();
 });
 
 var detailsOpen = "";
 
 contactElements.forEach((element) => {
-  element.addEventListener("click", () => ContactClick(element.id));
+  element.addEventListener("click", () => ContactClick(element));
 });
 
-function ContactClick(name) {
+function ContactClick(element) {
+  const name = element.id;
   console.log(name);
   if (detailsOpen.length === 0 || detailsOpen !== name) {
     detailsOpen = name;
 
-    toggleDetails();
+    contactElements.forEach((el) => {
+      el.style.height = `${56 + (el.id === name ? 16 : 0)}px`;
+    });
 
-    contactConnector.style.height = "1rem";
-    const thing = contactElements
-      .find((element) => element.id === name)
-      .getBoundingClientRect();
-    contactConnector.style.left = `${thing.x - 8}px`;
-    console.log(thing);
+    toggleDetails();
   }
 }
 

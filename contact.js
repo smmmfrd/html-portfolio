@@ -1,8 +1,20 @@
 const CTA_TEXT = {
-  linkedin: "Connect with me!",
-  github: "My code!",
-  twitter: "See updates on my work!",
-  email: "Get in contact.",
+  linkedin: {
+    text: "Connect with me! →",
+    link: "https://www.linkedin.com/in/sam-mumford-66982b25a/",
+  },
+  github: {
+    text: "My code! →",
+    link: "https://github.com/smmmfrd",
+  },
+  twitter: {
+    text: "See updates on my work! →",
+    link: "https://twitter.com/beheeyum",
+  },
+  email: {
+    text: "Get in contact. →",
+    link: "mailto:smmmfrd@gmail.com",
+  },
 };
 
 const contactElements = [...document.querySelectorAll(".contact-item")];
@@ -28,7 +40,6 @@ contactElements.forEach((element) => {
 
 function ContactClick(element) {
   const name = element.id;
-  console.log(name);
   if (detailsOpen.length === 0 || detailsOpen !== name) {
     detailsOpen = name;
 
@@ -36,7 +47,8 @@ function ContactClick(element) {
       el.style.height = `${56 + (el.id === name ? 16 : 0)}px`;
     });
 
-    contactCTA.textContent = CTA_TEXT[name];
+    contactCTA.textContent = CTA_TEXT[name].text;
+    contactCTA.href = CTA_TEXT[name].link;
     toggleDetails();
   }
 }

@@ -1,8 +1,8 @@
 const CTA_TEXT = {
-  linkedin: "Linked and Winked",
-  github: "Git some of this hub",
-  twitter: "Paying for twitter?",
-  email: "This is prob the best thing to do.",
+  linkedin: "Connect with me!",
+  github: "My code!",
+  twitter: "See updates on my work!",
+  email: "Get in contact.",
 };
 
 const contactElements = [...document.querySelectorAll(".contact-item")];
@@ -10,7 +10,6 @@ const contactDetails = document.querySelector("#contact-detail");
 const contactConnector = document.querySelector("#contact-connector");
 const contactCTA = document.querySelector("#contact-cta");
 
-console.log(contactElements.map((element) => element.id));
 document.querySelector("#contact-link").addEventListener("mouseleave", () => {
   detailsOpen = "";
 
@@ -38,7 +37,6 @@ function ContactClick(element) {
     });
 
     contactCTA.textContent = CTA_TEXT[name];
-
     toggleDetails();
   }
 }

@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body
-    class="relative max-w-3xl mx-auto bg-primary-900 text-primary-50 px-2 py-4 font-body"
+    class="relative max-w-3xl mx-auto bg-background text-text px-2 py-4 font-body"
   >
     <!-- NAVBAR -->
     <nav
-      class="z-30 sticky top-0 border-primary-800 bg-primary-900 -mt-4 -mx-2 flex justify-between py-2 px-2 items-center"
+      class="z-30 sticky top-0 bg-background -mt-4 -mx-2 flex justify-between py-2 px-2 items-center"
     >
       <h1 id="nav-title" class="font-display text-4xl">Welcome</h1>
       <ul class="flex items-end justify-end gap-4">
@@ -35,9 +35,9 @@
         <span class="pl-2 block"
           >Hello! I'm Sam, a passionate web developer!</span
         >
-        <span class="mt-1.5 block w-24 h-0.5 bg-secondary-400"></span>
+        <span class="mt-1.5 block w-24 h-0.5 bg-accent"></span>
       </h2>
-      <div class="m-4 py-4 px-6 bg-primary-700">
+      <div class="m-4 py-4 px-6 bg-secondary">
         <p class="text-xl mb-4">
           I'm developing web apps with Typescript and Next.js!
         </p>
@@ -58,12 +58,13 @@
 
         <!-- CALL TO ACTION BUTTON -->
         <div class="relative w-48 h-12 z-10">
-          <span
-            class="absolute top-0 left-0 w-56 h-12 bg-secondary-400 text-primary-900 font-bold text-xl px-4 py-2.5 z-20 hover:bg-secondary-200 hover:top-0.5 hover:left-0.5 active:bg-secondary-100 active:top-1 active:left-1"
-          >
-            <a href="#contact">Get in contact!</a>
-          </span>
-          <div class="bg-primary-900 w-56 h-12 absolute top-1 left-1 z-0"></div>
+          <a
+            href="#contact"
+            title="Head to the contact section!"
+            class="absolute top-0 left-0 w-60 h-12 bg-accent text-background font-bold text-xl px-4 py-2.5 z-20 hover:bg-primary hover:top-0.5 hover:left-0.5 active:bg-text active:top-1 active:left-1"
+            >Get in contact! &rarr;
+          </a>
+          <div class="bg-text w-60 h-12 absolute top-1 left-1 z-0"></div>
         </div>
       </div>
     </header>
@@ -73,7 +74,7 @@
       <!-- PROJECT HERO -->
       <h2 class="text-5xl leading-tight mb-8 font-display">
         <span class="pl-2 block">Featured Projects</span>
-        <span class="mt-1.5 block w-24 h-0.5 bg-secondary-400"></span>
+        <span class="mt-1.5 block w-24 h-0.5 bg-accent"></span>
       </h2>
 
       <!-- POKÈBOOK -->
@@ -226,16 +227,13 @@
     <section id="contact" class="mt-24 pt-28 min-h-screen">
       <h2 class="text-5xl font-display mb-12">
         <span class="ml-2">Get in Contact!</span>
-        <span class="mt-1.5 block w-24 h-0.5 bg-secondary-400"></span>
+        <span class="mt-1.5 block w-24 h-0.5 bg-accent"></span>
       </h2>
 
-      <article
-        id="contact-link"
-        class="relative px-8 py-4 flex flex-col bg-primary-700 group"
-      >
+      <article id="contact-link" class="relative px-8 py-4 flex flex-col group">
         <ul class="flex items-start justify-between">
           <li
-            class="text-center transition-all text-xl cursor-pointer bg-secondary-400 p-3 contact-item delay-150 hover:delay-0"
+            class="text-center transition-all text-xl cursor-pointer bg-secondary p-3 contact-item delay-150 hover:delay-0"
             id="linkedin"
           >
             <!-- Linkedin Logo -->
@@ -244,7 +242,7 @@
               width="16"
               height="16"
               fill="currentColor"
-              class="w-8 h-8 fill-primary-900"
+              class="w-8 h-8 fill-text"
               viewBox="0 0 16 16"
             >
               <title>LinkedIn Logo</title>
@@ -254,7 +252,7 @@
             </svg>
           </li>
           <li
-            class="text-center transition-all text-xl cursor-pointer bg-secondary-400 p-3 contact-item delay-150 hover:delay-0"
+            class="text-center transition-all text-xl cursor-pointer bg-secondary p-3 contact-item delay-150 hover:delay-0"
             id="github"
           >
             <!-- Github Logo -->
@@ -263,7 +261,7 @@
               width="16"
               height="16"
               fill="currentColor"
-              class="w-8 h-8 fill-primary-900"
+              class="w-8 h-8 fill-text"
               viewBox="0 0 16 16"
             >
               <title>Github Logo</title>
@@ -273,7 +271,7 @@
             </svg>
           </li>
           <li
-            class="text-center transition-all text-xl cursor-pointer bg-secondary-400 p-3 contact-item delay-150 hover:delay-0"
+            class="text-center transition-all text-xl cursor-pointer bg-secondary p-3 contact-item delay-150 hover:delay-0"
             id="twitter"
           >
             <!-- Twitter Logo -->
@@ -282,7 +280,7 @@
               width="16"
               height="16"
               fill="currentColor"
-              class="w-8 h-8 fill-primary-900"
+              class="w-8 h-8 fill-text"
               viewBox="0 0 16 16"
             >
               <title>Twitter Logo</title>
@@ -292,7 +290,7 @@
             </svg>
           </li>
           <li
-            class="text-center transition-all text-xl cursor-pointer bg-secondary-400 p-3 contact-item delay-150 hover:delay-0"
+            class="text-center transition-all text-xl cursor-pointer bg-secondary p-3 contact-item delay-150 hover:delay-0"
             id="email"
           >
             <!-- Email Logo -->
@@ -301,7 +299,7 @@
               width="16"
               height="16"
               fill="currentColor"
-              class="w-8 h-8 fill-primary-900"
+              class="w-8 h-8 fill-text"
               viewBox="0 0 16 16"
             >
               <title>Email Logo</title>
@@ -318,7 +316,7 @@
 
         <footer
           id="contact-detail"
-          class="text-primary-900 overflow-hidden h-0 bg-secondary-400 transition-all group-hover:opacity-100 group-hover:delay-100"
+          class="overflow-hidden h-0 bg-secondary transition-all group-hover:opacity-100 group-hover:delay-100"
         >
           <a
             id="contact-cta"

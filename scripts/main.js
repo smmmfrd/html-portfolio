@@ -1,3 +1,5 @@
+//#region Navigation Changing
+
 window.addEventListener("scroll", handleScroll);
 
 (function confirmScroll() {
@@ -68,3 +70,17 @@ function write(text) {
     started = false;
   }
 }
+
+//#endregion
+
+//#region DarkMode Toggling
+
+const body = document.querySelector("body");
+
+// Button is already set in the navigation bar to call this
+function toggleDarkMode() {
+  body.classList.toggle("dark");
+}
+
+toggleDarkMode();
+//#endregion

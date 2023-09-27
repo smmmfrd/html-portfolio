@@ -57,15 +57,15 @@ function startWriting(text) {
   if (!started && navTitle.textContent !== text) {
     writerIndex = 0;
     started = true;
-    write(text);
+    typewriter(text);
   }
 }
 
-function write(text) {
+function typewriter(text) {
   if (writerIndex < text.length) {
     writerIndex++;
     navTitle.textContent = text.slice(0, writerIndex);
-    setTimeout(() => write(text), delay);
+    setTimeout(() => typewriter(text), delay);
   } else {
     started = false;
   }

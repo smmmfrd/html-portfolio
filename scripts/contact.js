@@ -44,7 +44,7 @@ function ContactClick(element) {
     detailsOpen = name;
 
     contactElements.forEach((el) => {
-      el.style.height = `${56 + (el.id === name ? 16 : 0)}px`;
+      el.style.height = `${56 + (el.id === name ? 8 : 0)}px`;
     });
 
     contactCTA.textContent = CTA_TEXT[name].text;

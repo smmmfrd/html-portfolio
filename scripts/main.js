@@ -82,5 +82,4 @@ function toggleDarkMode() {
   body.classList.toggle("dark");
 }
 
-toggleDarkMode();
 //#endregion

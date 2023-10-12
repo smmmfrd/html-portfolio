@@ -79,7 +79,7 @@ function typewriter(text) {
 
 const body = document.querySelector("body");
 
-// Button is already set in the navigation bar to call this
+document.querySelector("#toggle").addEventListener("click", toggleDarkMode);
 function toggleDarkMode() {
   body.classList.toggle("dark");
 }

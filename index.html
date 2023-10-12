@@ -15,12 +15,7 @@
       class="z-30 sticky top-0 bg-background -mt-4 -mx-2 flex justify-between py-2 px-2 items-center"
     >
       <header class="flex items-center">
-        <button
-          onclick="toggleDarkMode()"
-          id="toggle"
-          class="mr-2 w-8 h-8"
-          title="Toggle dark mode"
-        >
+        <button id="toggle" class="mr-2 w-8 h-8" title="Toggle dark mode">
           <img
             src="./icons/code.svg"
             alt="A flame which is the icon for this site."
@@ -46,7 +41,10 @@
     </nav>
 
     <!-- HERO -->
-    <header id="about" class="min-h-screen -mb-20 flex flex-col justify-center">
+    <header
+      id="about"
+      class="min-h-screen h-max sm:-mb-20 flex flex-col justify-center"
+    >
       <h2 class="block text-5xl font-display">
         <span class="pl-2 block"
           >Hello! I'm Sam, a passionate web developer!</span

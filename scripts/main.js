@@ -1,3 +1,5 @@
+import { Find } from "./dialog";
+
 //#region Navigation Changing
 
 window.addEventListener("scroll", handleScroll);
@@ -83,3 +85,5 @@ function toggleDarkMode() {
 }
 
 //#endregion
+
+Find();

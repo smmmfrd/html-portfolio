@@ -11,10 +11,11 @@ function Find() {
       DisplayImage(children[index].src, children[index].alt)
     )
   );
+
+  // DisplayImage(children[0].src, children[0].alt);
 }
 
 function DisplayImage(img, altText) {
-  console.log(img, altText);
   imgDisplay.src = img;
   imgDisplay.alt = altText;
   imgDialog.showModal();

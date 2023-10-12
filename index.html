@@ -465,8 +465,20 @@
       >
     </footer>
 
-    <dialog id="img-display">
-      <img src="" alt="" class="w-full" />
+    <dialog
+      id="img-display"
+      class="backdrop-brightness-90 bg-transparent rounded-xl w-full"
+    >
+      <div class="h-full flex flex-col justify-center relative p-2">
+        <button
+          class="text-4xl bg-text text-background w-12 h-12 pb-0.5 rounded-full absolute top-0.5 right-0.5"
+          onclick="document.querySelector('#img-display').close()"
+          title="Close"
+        >
+          &#10005;
+        </button>
+        <img src="" alt="" class="w-full max-w-5xl rounded-lg" />
+      </div>
     </dialog>
   </body>
   <script src="scripts/main.js" defer type="module"></script>

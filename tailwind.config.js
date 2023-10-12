@@ -12,6 +12,8 @@ export default {
       primary: "var(--primary)",
       secondary: "var(--secondary)",
       accent: "var(--accent)",
+      transparent: "var(--transparent)",
+      opaque: "var(--opaque)",
     },
   },
   plugins: [],
